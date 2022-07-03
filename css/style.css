@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Source+Sans+Pro:wght@300&display=swap');
+
+/* 
+    Yellow color: #fad744
+    Light Blue color: #54c3ef
+    Dark Blue color: #2b3252
+    Text Font Family: Source Sans Pro  //font-family: 'Source Sans Pro', sans-serif;
+    Heading Font Family: Caveat Brush Cursive //font-family: 'Caveat Brush', cursive;
+
+     
+*/
+
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color-yellow:#fad744;
+  --color-LBlue:#54c3ef;
+  --color-DBlue:#2b3252;
+}
+html{
+  font-size: 62.5%; 
+}
+body{
+  font-size: inherit;
+  font-family:'Source Sans Pro', sans-serif;
+  background-color: var(--color-LBlue);
+}
+.container{
+  max-width: 700px;
+  margin: 10px auto;
+  min-height: 40vh;
+}
+/* Error Container Text */
+.container h3{
+  padding: 20px;
+  font-size: 22px;
+  background-color: rgba(255, 0, 0, 0.507);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border: 2px solid var(--color-yellow);
+}
+/* Header Main */
+.container h2{
+  font-family: 'Caveat Brush', cursive;
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-shadow: 1px 1px #000;
+  color: var(--color-yellow);  
+}
+.nmt20{margin-top: 100px;}
+.d-flex{display: flex;gap: 10px;}
+.ques-sec{
+  background-color: var(--color-DBlue);
+  padding: 20px;  
+  flex: 1;
+  border-radius: 5px;
+}
+.res-sec > div{
+  position: sticky;
+  top: 40px;
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.res-sec > div h4{font-size: 22px}
+.res-sec > div h4 span{font-size: 20px}
+.sub-btn{text-align: center;}
+.sub-btn input{
+  text-align: center;
+  background-color: var(--color-yellow);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.sub-btn input:hover{
+  box-shadow: 1px 1px 8px #000;
+}
+.qtnBox{  
+  margin-bottom: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-yellow);
+}
+.qtnBox h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--color-yellow);
+} 
+.qtnBox input{margin-bottom: 10px;margin-right: 10px;} 
+.qtnBox label{color: var(--color-yellow);font-size: 16px;} 
